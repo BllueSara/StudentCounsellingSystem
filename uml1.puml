@@ -1,0 +1,151 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class com.sun.glass.events.KeyEvent
+class java.awt.Component
+class java.awt.Dimension
+class java.awt.HeadlessException
+class java.awt.Toolkit
+class java.awt.image.BufferedImage
+class java.io.BufferedWriter
+class java.io.ByteArrayOutputStream
+class java.io.File
+class java.io.FileInputStream
+class java.io.FileNotFoundException
+class java.io.FileWriter
+class java.io.IOException
+class java.io.Writer
+class java.sql.Connection
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.text.DateFormat
+class java.text.SimpleDateFormat
+class java.util.Calendar
+class java.util.Date
+class java.util.GregorianCalendar
+class java.util.LinkedList
+class java.util.Scanner
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.imageio.ImageIO
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class net.proteanit.sql.DbUtils
+class student.information.system.Audit_details
+class student.information.system.Choice
+class student.information.system.ChoicesData
+class student.information.system.CounsellingResult
+class student.information.system.DbUtils
+class student.information.system.Emp
+class student.information.system.Login
+class student.information.system.MainMenu
+class student.information.system.Result
+class student.information.system.StudentData
+class student.information.system.StudentInformation
+class student.information.system.StudentInformationSystem
+class student.information.system.db
+class student.information.system.users
+student.information.system.Audit_details ..> java.lang.SuppressWarnings
+student.information.system.Audit_details ..> java.sql.Connection
+student.information.system.Audit_details ..> java.sql.PreparedStatement
+student.information.system.Audit_details ..> java.sql.ResultSet
+student.information.system.Audit_details ..> java.util.Calendar
+student.information.system.Audit_details ..> java.util.GregorianCalendar
+student.information.system.Audit_details --|> javax.swing.JFrame
+student.information.system.Audit_details ..> javax.swing.JOptionPane
+student.information.system.Audit_details ..> net.proteanit.sql.DbUtils
+student.information.system.Choice ..> java.lang.SuppressWarnings
+student.information.system.Choice ..> java.awt.Component
+student.information.system.Choice ..> java.awt.HeadlessException
+student.information.system.Choice ..> java.awt.image.BufferedImage
+student.information.system.Choice ..> java.io.File
+student.information.system.Choice ..> java.io.FileNotFoundException
+student.information.system.Choice ..> java.io.IOException
+student.information.system.Choice ..> java.util.logging.Level
+student.information.system.Choice ..> java.util.logging.Logger
+student.information.system.Choice ..> javax.imageio.ImageIO
+student.information.system.Choice --|> javax.swing.JFrame
+student.information.system.ChoicesData ..> java.awt.HeadlessException
+student.information.system.ChoicesData ..> java.io.FileWriter
+student.information.system.ChoicesData ..> java.io.IOException
+student.information.system.ChoicesData ..> java.io.Writer
+student.information.system.ChoicesData ..> student.information.system.StudentData
+student.information.system.CounsellingResult ..> java.lang.SuppressWarnings
+student.information.system.CounsellingResult ..> java.awt.Component
+student.information.system.CounsellingResult ..> java.awt.image.BufferedImage
+student.information.system.CounsellingResult ..> java.io.File
+student.information.system.CounsellingResult ..> java.io.FileNotFoundException
+student.information.system.CounsellingResult ..> java.util.Scanner
+student.information.system.CounsellingResult ..> java.util.logging.Level
+student.information.system.CounsellingResult ..> java.util.logging.Logger
+student.information.system.CounsellingResult ..> javax.imageio.ImageIO
+student.information.system.CounsellingResult --|> javax.swing.JFrame
+student.information.system.Login ..> java.lang.SuppressWarnings
+student.information.system.Login ..> com.sun.glass.events.KeyEvent
+student.information.system.Login ..> java.io.File
+student.information.system.Login ..> java.io.FileNotFoundException
+student.information.system.Login ..> java.io.FileWriter
+student.information.system.Login ..> java.io.IOException
+student.information.system.Login ..> java.io.Writer
+student.information.system.Login ..> java.sql.Connection
+student.information.system.Login ..> java.sql.PreparedStatement
+student.information.system.Login ..> java.sql.ResultSet
+student.information.system.Login ..> java.text.DateFormat
+student.information.system.Login ..> java.text.SimpleDateFormat
+student.information.system.Login ..> java.util.Calendar
+student.information.system.Login ..> java.util.Date
+student.information.system.Login ..> java.util.GregorianCalendar
+student.information.system.Login ..> java.util.LinkedList
+student.information.system.Login ..> java.util.Scanner
+student.information.system.Login ..> java.util.logging.Level
+student.information.system.Login ..> java.util.logging.Logger
+student.information.system.Login --|> javax.swing.JFrame
+student.information.system.Login ..> javax.swing.JOptionPane
+student.information.system.MainMenu ..> java.lang.SuppressWarnings
+student.information.system.MainMenu ..> java.awt.Dimension
+student.information.system.MainMenu ..> java.awt.Toolkit
+student.information.system.MainMenu ..> java.sql.Connection
+student.information.system.MainMenu ..> java.sql.PreparedStatement
+student.information.system.MainMenu ..> java.sql.ResultSet
+student.information.system.MainMenu ..> java.text.DateFormat
+student.information.system.MainMenu ..> java.text.SimpleDateFormat
+student.information.system.MainMenu ..> java.util.Date
+student.information.system.MainMenu ..> java.util.GregorianCalendar
+student.information.system.MainMenu --|> javax.swing.JFrame
+student.information.system.MainMenu ..> javax.swing.JOptionPane
+student.information.system.Result ..> java.lang.SuppressWarnings
+student.information.system.Result --|> javax.swing.JFrame
+student.information.system.StudentData ..> java.io.FileNotFoundException
+student.information.system.StudentData ..> java.io.FileWriter
+student.information.system.StudentData ..> java.io.IOException
+student.information.system.StudentData ..> java.io.Writer
+student.information.system.StudentData ..> student.information.system.Login
+student.information.system.StudentInformation ..> java.lang.SuppressWarnings
+student.information.system.StudentInformation ..> java.awt.image.BufferedImage
+student.information.system.StudentInformation ..> java.io.BufferedWriter
+student.information.system.StudentInformation ..> java.io.ByteArrayOutputStream
+student.information.system.StudentInformation ..> java.io.File
+student.information.system.StudentInformation ..> java.io.FileInputStream
+student.information.system.StudentInformation ..> java.io.FileNotFoundException
+student.information.system.StudentInformation ..> java.io.FileWriter
+student.information.system.StudentInformation ..> java.io.IOException
+student.information.system.StudentInformation ..> java.sql.Connection
+student.information.system.StudentInformation ..> java.sql.PreparedStatement
+student.information.system.StudentInformation ..> java.sql.ResultSet
+student.information.system.StudentInformation ..> java.text.DateFormat
+student.information.system.StudentInformation ..> java.text.SimpleDateFormat
+student.information.system.StudentInformation ..> java.util.Calendar
+student.information.system.StudentInformation ..> java.util.Date
+student.information.system.StudentInformation ..> java.util.GregorianCalendar
+student.information.system.StudentInformation ..> java.util.LinkedList
+student.information.system.StudentInformation ..> java.util.Scanner
+student.information.system.StudentInformation ..> java.util.logging.Level
+student.information.system.StudentInformation ..> java.util.logging.Logger
+student.information.system.StudentInformation ..> javax.imageio.ImageIO
+student.information.system.StudentInformation --|> javax.swing.JFrame
+student.information.system.StudentInformation ..> net.proteanit.sql.DbUtils
+student.information.system.users ..> java.lang.SuppressWarnings
+student.information.system.users ..> java.sql.Connection
+student.information.system.users ..> java.sql.PreparedStatement
+student.information.system.users ..> java.sql.ResultSet
+student.information.system.users --|> javax.swing.JFrame
+@enduml
